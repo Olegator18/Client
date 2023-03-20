@@ -4,16 +4,14 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
+
 @Data
 @AllArgsConstructor
 @RequiredArgsConstructor
 
-public class BookEntity {
-public Long id;
-public String title;
-public AuthorEntity author;
-public PublisherEntity publisher;
-public int year;
-public String kind;
-
+public class AuthorEntity {
+    private Long id;
+    private String name;
+    private String lastname;
+    private String surname;
 }

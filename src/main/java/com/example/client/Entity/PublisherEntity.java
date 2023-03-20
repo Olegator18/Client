@@ -8,12 +8,8 @@ import lombok.RequiredArgsConstructor;
 @AllArgsConstructor
 @RequiredArgsConstructor
 
-public class BookEntity {
-public Long id;
-public String title;
-public AuthorEntity author;
-public PublisherEntity publisher;
-public int year;
-public String kind;
-
+public class PublisherEntity {
+    private Long id;
+    private String publisher;
+    private String city;
 }

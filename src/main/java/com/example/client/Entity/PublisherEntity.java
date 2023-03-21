@@ -10,6 +10,8 @@ import lombok.RequiredArgsConstructor;
 
 public class PublisherEntity {
     private Long id;
-    private String publisher;
+    private String name;
     private String city;
+    private String year;
+
 }

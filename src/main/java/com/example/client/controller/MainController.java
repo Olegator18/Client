@@ -62,7 +62,7 @@ public class MainController {
                 try {
                 BookEntity tempBook = new BookEntity();
                 booksData.add(tempBook);
-                Application.showPersonEditDialog(tempBook, booksData.size() - 1);
+                //Application.showPersonEditDialog(tempBook, booksData.size() - 1);
                 Long id = addBook(tempBook);
                 tempBook.setId(id);
                 }catch (Exception e){}
@@ -84,29 +84,13 @@ public class MainController {
                         alert.showAndWait();
                 }
         }
-
-        @FXML
-        private void click_dublicateBook() throws IOException {
-                BookEntity selectedPerson = tableBooks.getSelectionModel().getSelectedItem();
-                if (selectedPerson != null) {
-                        addBook(selectedPerson);
-                        booksData.add(booksData.indexOf(selectedPerson) + 1, selectedPerson);
-                } else {
-                        // Ничего не выбрано
-                        Alert alert = new Alert(Alert.AlertType.WARNING);
-                        //alert.initOwner(Application.getPrimaryStage());
-                        alert.setTitle("Ничего не выбрано");
-                        alert.setHeaderText("Отсутствует выбраный польватель");
-                        alert.setContentText("Пожалуйста, выберите пользвоателя в таблице");
-                        alert.showAndWait();
-                }
-        }
+        
 
         @FXML
         private void click_editBook() throws IOException {
                 BookEntity selectedPerson = tableBooks.getSelectionModel().getSelectedItem();
                 if (selectedPerson != null){
-                        Application.showPersonEditDialog(selectedPerson, booksData.indexOf(selectedPerson));
+                        //Application.showPersonEditDialog(selectedPerson, booksData.indexOf(selectedPerson));
                         http.put(api + "update", gson.toJson(selectedPerson).toString());}
                 else {
                         // Ничего не выбрано

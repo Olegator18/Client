@@ -12,6 +12,6 @@ import lombok.RequiredArgsConstructor;
 public class AuthorEntity {
     private Long id;
     private String name;
-    private String lastname;
+    private String otch;
     private String surname;
 }

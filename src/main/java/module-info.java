@@ -8,8 +8,10 @@ module com.example.client {
     exports com.example.client;
     exports com.example.client.controller;
     exports com.example.client.Entity;
+    opens com.example.client.Entity to com.google.gson;
     exports com.example.client.response;
     exports com.example.client.service;
     exports com.example.client.utils;
     opens com.example.client.controller to javafx.fxml;
+
 }

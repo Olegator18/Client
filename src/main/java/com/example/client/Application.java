@@ -34,11 +34,11 @@ public class Application extends javafx.application.Application {
         }
     }
 
-    public static boolean showPersonEditDialog(BookEntity bookObj, int id) {
+    public static boolean showPersonEditDialog (BookEntity bookObj, int id) {
         try {
 // Загрузка fxml создание сцены для всплывающего окна.
             FXMLLoader Loader = new FXMLLoader();
-            Loader.setLocation(Application.class.getResource("editBook.fxml"));
+            Loader.setLocation(Application.class.getResource("main.fxml"));
             AnchorPane page = (AnchorPane) Loader.load();
 // Создание окна Stage.
             Stage dialogStage = new Stage();
@@ -46,8 +46,8 @@ public class Application extends javafx.application.Application {
             dialogStage.initModality(Modality.WINDOW_MODAL);
             Scene scene = new Scene(page);
             EditBookController controller = Loader.getController();
-            controller.setDialogStage(dialogStage);
-            controller.setLabels(bookObj, id);
+            /*controller.setDialogStage(dialogStage);
+            controller.setLabels(bookObj, id);*/
             dialogStage.setScene(scene);
 
             dialogStage.showAndWait();

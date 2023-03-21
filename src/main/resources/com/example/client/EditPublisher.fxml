@@ -6,22 +6,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.Publisher">
+<AnchorPane prefHeight="400.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.EditPublisherController">
    <children>
-      <Button layoutX="139.0" layoutY="344.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="107.0" text="Сохранить">
+      <Button layoutX="139.0" layoutY="344.0" mnemonicParsing="false" onAction="#SaveBook" prefHeight="34.0" prefWidth="107.0" text="Сохранить">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="305.0" layoutY="344.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="107.0" text="Отмена">
+      <Button layoutX="305.0" layoutY="344.0" mnemonicParsing="false" onAction="#CloseBook" prefHeight="34.0" prefWidth="107.0" text="Закрыть">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TextField layoutX="206.0" layoutY="111.0" prefHeight="34.0" prefWidth="234.0" />
-      <TextField layoutX="206.0" layoutY="228.0" prefHeight="34.0" prefWidth="234.0" />
-      <TextField layoutX="206.0" layoutY="167.0" prefHeight="34.0" prefWidth="234.0" />
+      <TextField fx:id="PublisherName" layoutX="206.0" layoutY="111.0" prefHeight="34.0" prefWidth="234.0" />
+      <TextField fx:id="PublisherYear" layoutX="206.0" layoutY="228.0" prefHeight="34.0" prefWidth="234.0" />
+      <TextField fx:id="PublisherCity" layoutX="206.0" layoutY="167.0" prefHeight="34.0" prefWidth="234.0" />
       <Label layoutX="145.0" layoutY="44.0" text="Добавление издательства">
          <font>
             <Font name="System Bold" size="20.0" />

@@ -42,7 +42,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ComboBox fx:id="SetAuthor" layoutX="190.0" layoutY="88.0" prefHeight="32.0" prefWidth="220.0" />
-      <ComboBox fx:id="SetPublisher" layoutX="192.0" layoutY="160.0" prefHeight="32.0" prefWidth="220.0" />
+      <ComboBox fx:id="SetAuthor" layoutX="191.0" layoutY="95.0" prefHeight="32.0" prefWidth="220.0" />
+      <ComboBox fx:id="SetPublisher" layoutX="191.0" layoutY="143.0" prefHeight="32.0" prefWidth="220.0" />
    </children>
 </AnchorPane>
